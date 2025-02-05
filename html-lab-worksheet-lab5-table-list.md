@@ -67,7 +67,7 @@
 2. สร้างรายการเมนูอาหาร
 
 [วางโค้ด HTML ที่นี่]
---html
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -95,36 +95,68 @@
 </head>
 <body>
     <h1 style="text-align: center;">ข้อมูลส่วนตัว</h1>
-    <table>
-        <tr>
-            <th>ชื่อ</th>
-            <td>ธีรภพ พรหมวิหาร</td>
-        </tr>
-        <tr>
-            <th>อายุ</th>
-            <td>19 ปี</td>
-        </tr>
-        <tr>
-            <th>ที่อยู่</th>
-            <td>16 ร่มเกล้า 20 ถนนร่มเกล้า เขตมีนบุรี เเขวงมีนบุรี กรุงเทพฯ</td>
-        </tr>
-        <tr>
-            <th>อีเมล</th>
-            <td>pob.trp@gmail.com</td>
-        </tr>
-    </table>
----
-    <h1 style="text-align: center;">เมนูอาหาร</h1>
-    <ul>
-        <li>ข้าวผัดกระเพราไก่ไข่ดาว</li>
-        <li>ต้มยำกุ้ง</li>
-        <li>ส้มตำปูปลาร้า</li>
-        <li>ข้าวมันไก่</li>
-        <li>ขนมจีนแกงเขียวหวาน</li>
-    </ul>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="th"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;ข้อมูลส่วนตัวและเมนูอาหาร&lt;/title&gt;
+    &lt;style&gt;
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        ul {
+            list-style-type: disc;
+            width: 50%;
+            margin: 20px auto;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1 style="text-align: center;"&gt;ข้อมูลส่วนตัว&lt;/h1&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;ชื่อ&lt;/th&gt;
+            &lt;td&gt;ธีรภพ พรหมวิหาร&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;อายุ&lt;/th&gt;
+            &lt;td&gt;19 ปี&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;ที่อยู่&lt;/th&gt;
+            &lt;td&gt;16 ร่มเกล้า 20 ถนนร่มเกล้า เขตมีนบุรี เเขวงมีนบุรี กรุงเทพฯ&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;อีเมล&lt;/th&gt;
+            &lt;td&gt;pob.trp@gmail.com&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+    &lt;h1 style="text-align: center;"&gt;เมนูอาหาร&lt;/h1&gt;
+    &lt;ul&gt;
+        &lt;li&gt;ข้าวผัดกระเพราไก่ไข่ดาว&lt;/li&gt;
+        &lt;li&gt;ต้มยำกุ้ง&lt;/li&gt;
+        &lt;li&gt;ส้มตำปูปลาร้า&lt;/li&gt;
+        &lt;li&gt;ข้าวมันไก่&lt;/li&gt;
+        &lt;li&gt;ขนมจีนแกงเขียวหวาน&lt;/li&gt;
+    &lt;/ul&gt;
     
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
 </body>
 </html>
+
 
 
 [วางภาพ screenshot ที่นี่]
