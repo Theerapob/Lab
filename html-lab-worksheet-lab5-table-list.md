@@ -67,6 +67,7 @@
 2. สร้างรายการเมนูอาหาร
 
 [วางโค้ด HTML ที่นี่]
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -112,7 +113,6 @@
             <td>pob.trp@gmail.com</td>
         </tr>
     </table>
-
     <h1 style="text-align: center;">เมนูอาหาร</h1>
     <ul>
         <li>ข้าวผัดกระเพราไก่ไข่ดาว</li>
