@@ -67,9 +67,61 @@
 2. สร้างรายการเมนูอาหาร
 
 [วางโค้ด HTML ที่นี่]
-```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ข้อมูลส่วนตัวและเมนูอาหาร</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        ul {
+            list-style-type: disc;
+            width: 50%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">ข้อมูลส่วนตัว</h1>
+    <table>
+        <tr>
+            <th>ชื่อ</th>
+            <td>ธีรภพ พรหมวิหาร</td>
+        </tr>
+        <tr>
+            <th>อายุ</th>
+            <td>19 ปี</td>
+        </tr>
+        <tr>
+            <th>ที่อยู่</th>
+            <td>16 ร่มเกล้า 20 ถนนร่มเกล้า เขตมีนบุรี เเขวงมีนบุรี กรุงเทพฯ</td>
+        </tr>
+        <tr>
+            <th>อีเมล</th>
+            <td>pob.trp@gmail.com</td>
+        </tr>
+    </table>
 
-```
-- ภาพผลลัพธ์:
+    <h1 style="text-align: center;">เมนูอาหาร</h1>
+    <ul>
+        <li>ข้าวผัดกระเพราไก่ไข่ดาว</li>
+        <li>ต้มยำกุ้ง</li>
+        <li>ส้มตำปูปลาร้า</li>
+        <li>ข้าวมันไก่</li>
+        <li>ขนมจีนแกงเขียวหวาน</li>
+    </ul>
+</body>
+</html>
 [วางภาพ screenshot ที่นี่]
-
+![lab 5](https://github.com/user-attachments/assets/3a044ae7-2c8f-4a0c-92a2-a437fb54923a)
