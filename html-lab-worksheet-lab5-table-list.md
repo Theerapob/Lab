@@ -67,36 +67,16 @@
 2. สร้างรายการเมนูอาหาร
 
 [วางโค้ด HTML ที่นี่]
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>ข้อมูลส่วนตัวและเมนูอาหาร</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 50%;
-            margin: 20px auto;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        ul {
-            list-style-type: disc;
-            width: 50%;
-            margin: 20px auto;
-        }
-    </style>
+    <title>แสดงโค้ด HTML</title>
 </head>
 <body>
-    <h1 style="text-align: center;">ข้อมูลส่วนตัว</h1>
+    <h1>แสดงโค้ด HTML</h1>
     <pre><code>
-<!DOCTYPE html>
+&lt;!DOCTYPE html&gt;
 &lt;html lang="th"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -156,8 +136,6 @@
     </code></pre>
 </body>
 </html>
-
-
 
 [วางภาพ screenshot ที่นี่]
 
