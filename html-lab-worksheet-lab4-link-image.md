@@ -165,10 +165,93 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+    <style>
+        .center {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .center-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">ยินดีต้อนรับสู่ร้านขายสินค้า Hololive</h1>
+    
+    <div class="center-img">
+        <img src="https://hololivepro.com/wp-content/uploads/2023/03/hololive_hp.png" alt="logo" width="300">
+    </div>
+    <style>
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+        <a href="https://shop.hololivepro.com/" target="_blank">ไปยังหน้าสินค้า Official</a>
+    </nav>
+
+    <section id="top">
+        <h1>ประวัติ Hololive</h1>
+        <p>คัฟเวอร์คอร์โปเรชัน (ญี่ปุ่น: カバー株式会社; โรมาจิ: Kabā Kabushiki-gaisha) ถูกจัดตั้งขึ้นเมื่อวันที่ 13 มิถุนายน ค.ศ. 2016 โดย โมโตอากิ ทานิโงะ (ยาโกะ) ผู้ที่เคยสร้างตัวละครในเกมร่วมกับซานริโอ ที่บริษัทผลิตคอนเทนต์ Imagineer ในระยะแรก คัฟเวอร์มีจุดมุ่งหมายในด้านความเป็นจริงเสริม (AR) และความเป็นจริงเสมือน (VR) และได้รับทุนเริ่มต้นจาก Tokyo VR Startups และ Recruit
+
+            ในช่วงท้ายของปี 2017 บริษัทได้แสดงโปรแกรมตัวอย่างที่สามารถตรวจจับการเคลื่อนไหวได้ สามารถถ่ายทอดสดได้ โดยทานิโงะได้กล่าวไว้ว่า ไอเดียสำหรับ 'ไอดอลเสมือนจริง' ที่ได้มานั้นมาจากตัวละครเสมือนจริงเช่น ฮัตสึเนะ มิกุ และ คิสึนะ ไอ ที่เป็นผู้ริเริ่ในการใช้ตัวละครเสมือนจริงบนยูทูปในปี 2016
+            
+            คัฟเวอร์ได้เดบิวต์ ときのそら (โทคิโนะ โซระ) ซึ่งเป็นวีทูปเบอร์คนแรกของบริษัทโดยใช้โปรแกรมตรวจจับการเคลื่อนไหวของบริษัทในวันที่ 7 กันยายน 2017 ในวันที่ 21 ธันวาคมของปีเดียวกัน บริษัทได้ปล่อยแอพลิเคชั่น โฮโลไลฟ์ ที่ทำให้ผู้ใช้สามารถดูการถ่ายทอดสดได้ทางเทคโนโลยี AR ในวันถัดมาคัฟเวอร์ได้เปิดการรับสมัครสำหรับวีทูปเบอร์คนที่ 2 ของบริษัทที่ได้รับโดยชื่ออย่างเป็นทางการว่า ロボ子 (โรโบโกะ) โดยได้รับการเดบิวต์ในวันที่ 4 มีนาคม 2018
+        </p>
+    </section>
+
+    <section id="products">
+        <h2>สินค้าของเรา</h2>
+        <hr>
+        <p>Shishiro Botan</p>
+       
+        <img src="https://shop.hololivepro.com/cdn/shop/files/hololivefriends_top_ShishiroBotan_9ff0abe7-a209-48f7-8dab-2b9fca958de1_large.png?v=1712154633" alt="Shishiro Botan" width="200">
+        <img src="https://shop.hololivepro.com/cdn/shop/files/hololivefriends_vol.13_top_ShishiroBotanMidnightConvenienceStoreOutfit_1024x1024.png?v=1721267141" alt="Shishiro Botan Midnight" width="200">
+        
+    <figure>
+        <hr>
+        
+        <img src="https://shop.hololivepro.com/cdn/shop/files/hololivefriends_vol.13_top_ShishiroBotanMidnightConvenienceStoreOutfit_1024x1024.png?v=1721267141" width="200"alt="สินค้าชิ้นที่ 2">
+        
+    <figcaption>
+    โฮโลไลฟ์ เฟรนด์ส กับคุณ ชิชิระ โบตัน ชุดคอสตูมร้านสะดวกซื้อยามดึก
+        </figcaption>
+        </figure>
+    </section>
+    <hr>
+    <a href="https://shop.hololivepro.com/cdn/shop/files/hololivefriends_vol.13_shohin_ShishiroBotanMidnightConvenienceStoreOutfit_large.png?v=1721267141">
+        <img src="https://shop.hololivepro.com/cdn/shop/files/hololivefriends_vol.13_shohin_ShishiroBotanMidnightConvenienceStoreOutfit_large.png?v=1721267141images/products/product1.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+    </a>
+<hr>
+
+    <a href="#top">กลับด้านบน</a>
+    <a href="#products">ไปยังสินค้า</a>
+
+    <a href="mailto:contact@example.com">ส่งอีเมลหาเรา</a>
+    <a href="tel:+66812345678">โทร 081-234-5678</a>
+
+    <a href="files/document.pdf" download>ดาวน์โหลดเอกสาร</a>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![lab 4-1](https://github.com/user-attachments/assets/f982070b-f70f-4719-8721-e2676b97570f)
+![lab 4-2](https://github.com/user-attachments/assets/57ce4a3f-b30d-4472-bceb-100f58b75121)
 
 
 
