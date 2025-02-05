@@ -139,4 +139,5 @@
 </html>
 
 [วางภาพ screenshot ที่นี่]
+![lab 6](https://github.com/user-attachments/assets/dc5f5754-6369-4222-ad0d-4792e3137065)
 
