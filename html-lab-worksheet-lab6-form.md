@@ -223,6 +223,7 @@
 
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
+```html
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -232,63 +233,21 @@
         .form-group {
             margin-bottom: 15px;
         }
-        
         .input-wrapper {
             display: flex;
             align-items: center;
         }
-        
         .required-mark {
             color: red;
             margin-left: 5px;
         }
-        
         .error {
             color: red;
             font-size: 12px;
         }
     </style>
-    <script>
-        // ฟังก์ชันการตรวจสอบรหัสผ่าน
-        function validateForm() {
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-            var phone = document.getElementById("phone").value;
-            var profilePic = document.getElementById("profilePic").files[0];
-            var errorMessage = "";
-
-            // ตรวจสอบรูปแบบอีเมล
-            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-            if (!emailPattern.test(email)) {
-                errorMessage += "กรุณากรอกอีเมลให้ถูกต้อง.\n";
-            }
-
-            // ตรวจสอบรหัสผ่าน
-            if (password.length < 8) {
-                errorMessage += "รหัสผ่านต้องมีความยาวอย่างน้อย 8 ตัวอักษร.\n";
-            }
-
-            // ตรวจสอบรูปแบบเบอร์โทร
-            var phonePattern = /^[0-9]{10}$/;
-            if (!phonePattern.test(phone)) {
-                errorMessage += "กรุณากรอกเบอร์โทรให้ถูกต้อง.\n";
-            }
-
-            // ตรวจสอบขนาดไฟล์รูปโปรไฟล์
-            if (profilePic && profilePic.size > 2 * 1024 * 1024) { // 2MB
-                errorMessage += "ขนาดไฟล์รูปโปรไฟล์ไม่ควรเกิน 2MB.\n";
-            }
-
-            if (errorMessage != "") {
-                alert(errorMessage);
-                return false; // ป้องกันการส่งฟอร์ม
-            }
-            return true; // ส่งฟอร์ม
-        }
-    </script>
 </head>
 <body>
-    <h1>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</h1>
     <form action="/register" method="post" onsubmit="return validateForm()">
         <fieldset>
             <legend>ข้อมูลส่วนตัว</legend>
@@ -306,13 +265,10 @@
             </div>
             <div class="form-group">
                 <label>เพศ:</label>
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">ชาย</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">หญิง</label>
+                <input type="radio" id="male" name="gender" value="male" required> ชาย
+                <input type="radio" id="female" name="gender" value="female"> หญิง
             </div>
         </fieldset>
-
         <fieldset>
             <legend>ข้อมูลการติดต่อ</legend>
             <div class="form-group">
@@ -328,16 +284,13 @@
                 <textarea id="address" name="address" rows="3" required></textarea>
             </div>
         </fieldset>
-
         <fieldset>
             <legend>รูปโปรไฟล์</legend>
             <div class="form-group">
                 <label for="profilePic">อัพโหลดรูปโปรไฟล์:</label>
                 <input type="file" id="profilePic" name="profilePic" accept="image/*" required>
-                <p class="error">ขนาดไฟล์รูปโปรไฟล์ไม่ควรเกิน 2MB</p>
             </div>
         </fieldset>
-
         <fieldset>
             <legend>การยืนยันรหัสผ่าน</legend>
             <div class="form-group">
@@ -349,20 +302,15 @@
                 <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required>
             </div>
         </fieldset>
-
         <fieldset>
             <legend>ความสนใจในหมวดหมู่สินค้า</legend>
             <div class="form-group">
                 <label>หมวดหมู่สินค้าที่สนใจ:</label>
-                <input type="checkbox" id="electronics" name="interests" value="electronics">
-                <label for="electronics">อิเล็กทรอนิกส์</label>
-                <input type="checkbox" id="fashion" name="interests" value="fashion">
-                <label for="fashion">แฟชั่น</label>
-                <input type="checkbox" id="home" name="interests" value="home">
-                <label for="home">ของตกแต่งบ้าน</label>
+                <input type="checkbox" id="electronics" name="interests" value="electronics"> อิเล็กทรอนิกส์
+                <input type="checkbox" id="fashion" name="interests" value="fashion"> แฟชั่น
+                <input type="checkbox" id="home" name="interests" value="home"> ของตกแต่งบ้าน
             </div>
         </fieldset>
-
         <fieldset>
             <legend>การยอมรับเงื่อนไขการใช้งาน</legend>
             <div class="form-group">
@@ -370,18 +318,48 @@
                 <label for="agree">ข้าพเจ้ายอมรับเงื่อนไขการใช้งาน</label>
             </div>
         </fieldset>
-
         <div class="form-group">
             <button type="submit">สมัครสมาชิก</button>
         </div>
     </form>
+    <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var phone = document.getElementById("phone").value;
+            var profilePic = document.getElementById("profilePic").files[0];
+            var errorMessage = "";
+
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                errorMessage += "กรุณากรอกอีเมลให้ถูกต้อง.\n";
+            }
+
+            if (password.length < 8) {
+                errorMessage += "รหัสผ่านต้องมีความยาวอย่างน้อย 8 ตัวอักษร.\n";
+            }
+
+            var phonePattern = /^[0-9]{10}$/;
+            if (!phonePattern.test(phone)) {
+                errorMessage += "กรุณากรอกเบอร์โทรให้ถูกต้อง.\n";
+            }
+
+            if (profilePic && profilePic.size > 2 * 1024 * 1024) { // 2MB
+                errorMessage += "ขนาดไฟล์รูปโปรไฟล์ไม่ควรเกิน 2MB.\n";
+            }
+
+            if (errorMessage != "") {
+                alert(errorMessage);
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
 </html>
 
-</form>
-- ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
-![lab 6](https://github.com/user-attachments/assets/378491b8-1916-45e6-a805-d774b0796bec)
+
+.[วางภาพ screenshot ที่นี่]
 
 
 
