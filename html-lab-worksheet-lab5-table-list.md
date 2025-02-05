@@ -124,4 +124,4 @@
 </body>
 </html>
 [วางภาพ screenshot ที่นี่]
-![lab 5](https://github.com/user-attachments/assets/3a044ae7-2c8f-4a0c-92a2-a437fb54923a)
+
