@@ -67,6 +67,7 @@
 2. สร้างรายการเมนูอาหาร
 
 [วางโค้ด HTML ที่นี่]
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
