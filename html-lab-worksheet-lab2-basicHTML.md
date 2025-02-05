@@ -35,10 +35,24 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>หน้าเเรกของเว็บไซต์</title>
+</head>
+<body>
+    <h1>Welcome to ธีรภพ พรหมวิหาร เว็บไซต์</h1>
+    <p>This is my first web page.</p>
+    <div>block element ที่ขึ้นบรรทัดใหม่โดยอัตโนมัติ</div>
+    <span>inline element ที่ต่อเนื่องในบรรทัดเดียวกัน</span>
+    <em>ตัวเอียง</em>
+    <strong>ตัวหนา</strong>    
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![lab 2](https://github.com/user-attachments/assets/05bfaf77-44e2-4621-9e2c-173cafccb862)
 
 
