@@ -96,7 +96,7 @@
 <body>
     <h1 style="text-align: center;">ข้อมูลส่วนตัว</h1>
     <pre><code>
-&lt;!DOCTYPE html&gt;
+<!DOCTYPE html>
 &lt;html lang="th"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
